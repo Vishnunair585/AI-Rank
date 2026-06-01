@@ -57,7 +57,7 @@ python train_models.py
 streamlit run app.py
 ```
 
-The app opens at **[http://localhost:8501](https://rankmyai.streamlit.app/)**
+The app opens at **(https://rankmyai.streamlit.app/)**
 
 ---
 
