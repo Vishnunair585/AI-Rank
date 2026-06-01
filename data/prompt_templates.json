@@ -1,0 +1,102 @@
+{
+  "coding": {
+    "template": "You are an expert software engineer. Write a complete, well-commented {language} solution for the following problem:\n\n{problem_description}\n\nRequirements:\n- Include error handling\n- Add inline comments explaining key logic\n- Provide a brief explanation of the approach used\n- Include example input/output",
+    "variables": ["language", "problem_description"]
+  },
+  "debugging": {
+    "template": "You are a senior debugging expert. Analyze the following {language} code that has a bug:\n\n```{language}\n{buggy_code}\n```\n\nError encountered: {error_message}\n\nPlease:\n1. Identify the root cause of the bug\n2. Explain why it causes the error\n3. Provide the fixed code\n4. Suggest how to prevent this bug in future",
+    "variables": ["language", "buggy_code", "error_message"]
+  },
+  "code_review": {
+    "template": "Act as a senior software engineer doing a thorough code review. Review the following {language} code:\n\n```{language}\n{code}\n```\n\nEvaluate and comment on:\n1. Code quality and readability\n2. Performance optimizations\n3. Security vulnerabilities\n4. Best practices and design patterns\n5. Provide a refactored version if needed",
+    "variables": ["language", "code"]
+  },
+  "essay_writing": {
+    "template": "Write a well-structured, compelling {word_count}-word essay on the topic: '{topic}'\n\nAudience: {audience}\nTone: {tone}\n\nStructure:\n- Engaging introduction with a hook\n- 3-4 body paragraphs with evidence and examples\n- Strong conclusion with key takeaways\n- Use transitions between paragraphs",
+    "variables": ["word_count", "topic", "audience", "tone"]
+  },
+  "summarization": {
+    "template": "Summarize the following {content_type} in {length} format:\n\n{content}\n\nProvide:\n1. A one-line TL;DR\n2. Key points (bullet format)\n3. Main takeaway\n4. Any important caveats or limitations mentioned",
+    "variables": ["content_type", "length", "content"]
+  },
+  "translation": {
+    "template": "Translate the following text from {source_language} to {target_language}. Maintain the original tone, style, and cultural nuances:\n\n{text}\n\nAlso provide:\n- Any idiomatic expressions that were adapted\n- Alternative phrasings for ambiguous sections",
+    "variables": ["source_language", "target_language", "text"]
+  },
+  "creative_writing": {
+    "template": "Write a {format} about {subject} in the style of {style}.\n\nConstraints:\n- Length: {length}\n- Tone: {tone}\n- Include these elements: {elements}\n\nBe imaginative, use vivid descriptions, and ensure a compelling narrative arc.",
+    "variables": ["format", "subject", "style", "length", "tone", "elements"]
+  },
+  "research_qa": {
+    "template": "You are a knowledgeable research assistant. Answer the following research question comprehensively:\n\n{question}\n\nIn your response:\n1. Provide a direct answer first\n2. Give supporting evidence and context\n3. Mention different perspectives if applicable\n4. Cite the type of sources that support this (e.g., academic studies, industry reports)\n5. Note any limitations or areas of ongoing debate",
+    "variables": ["question"]
+  },
+  "math_solving": {
+    "template": "Solve the following {math_level} mathematics problem step by step:\n\n{problem}\n\nShow:\n1. The formula or theorem being applied\n2. Each calculation step clearly\n3. The final answer with units (if applicable)\n4. A verification check of the answer",
+    "variables": ["math_level", "problem"]
+  },
+  "data_analysis": {
+    "template": "Perform a comprehensive data analysis on the following dataset description:\n\nDataset: {dataset_description}\nGoal: {analysis_goal}\n\nProvide:\n1. Recommended analysis approach\n2. Python code using Pandas/NumPy/Matplotlib\n3. Key metrics to calculate\n4. Visualization suggestions\n5. Insights to look for",
+    "variables": ["dataset_description", "analysis_goal"]
+  },
+  "sql_generation": {
+    "template": "Write an optimized SQL query for the following requirement:\n\nDatabase: {database_type}\nTables available: {tables}\nRequirement: {requirement}\n\nProvide:\n1. The SQL query\n2. Explanation of each clause\n3. Any indexes that would improve performance\n4. Alternative approaches if applicable",
+    "variables": ["database_type", "tables", "requirement"]
+  },
+  "resume_writing": {
+    "template": "Create a professional, ATS-optimized resume for the following candidate:\n\nRole applying for: {target_role}\nYears of experience: {experience_years}\nKey skills: {skills}\nBackground: {background}\n\nFormat with:\n- Professional summary (3-4 lines)\n- Skills section with relevant keywords\n- Experience in STAR format\n- Education and certifications",
+    "variables": ["target_role", "experience_years", "skills", "background"]
+  },
+  "email_drafting": {
+    "template": "Draft a professional {email_type} email with the following details:\n\nFrom: {sender_role}\nTo: {recipient_role}\nSubject context: {context}\nKey points to cover: {key_points}\nDesired tone: {tone}\n\nKeep it concise, clear, and action-oriented.",
+    "variables": ["email_type", "sender_role", "recipient_role", "context", "key_points", "tone"]
+  },
+  "seo_content": {
+    "template": "Write SEO-optimized {content_type} for the following:\n\nPrimary keyword: {primary_keyword}\nSecondary keywords: {secondary_keywords}\nTarget audience: {audience}\nWord count: {word_count}\n\nInclude:\n- Keyword in title, first paragraph, and subheadings\n- Meta description (155 chars)\n- Internal linking suggestions\n- Call-to-action",
+    "variables": ["content_type", "primary_keyword", "secondary_keywords", "audience", "word_count"]
+  },
+  "social_media": {
+    "template": "Create {num_posts} engaging {platform} posts about {topic}.\n\nBrand voice: {brand_voice}\nTarget audience: {audience}\nGoal: {goal}\n\nFor each post include:\n- The post text (within character limits)\n- Relevant hashtags\n- Suggested media type (image/video/carousel)\n- Best time to post",
+    "variables": ["num_posts", "platform", "topic", "brand_voice", "audience", "goal"]
+  },
+  "legal_document": {
+    "template": "Draft a {document_type} with the following terms:\n\nParties involved: {parties}\nKey terms: {terms}\nJurisdiction: {jurisdiction}\n\nNote: This is a template only and should be reviewed by a qualified legal professional.\n\nInclude standard clauses for: definitions, obligations, liability, termination, and dispute resolution.",
+    "variables": ["document_type", "parties", "terms", "jurisdiction"]
+  },
+  "medical_qa": {
+    "template": "Provide a comprehensive, evidence-based response to this medical question:\n\n{question}\n\nStructure your response with:\n1. Direct answer with medical terminology explained\n2. Underlying mechanism or pathophysiology\n3. Common clinical considerations\n4. When to seek professional medical care\n\nNote: Always recommend consulting a healthcare provider for personal medical advice.",
+    "variables": ["question"]
+  },
+  "interview_prep": {
+    "template": "Prepare me for a {role} interview at a {company_type} company.\n\nMy background: {background}\nInterview type: {interview_type}\n\nProvide:\n1. Top 10 likely questions with model answers using STAR format\n2. Technical questions specific to {role}\n3. Questions I should ask the interviewer\n4. Common pitfalls to avoid",
+    "variables": ["role", "company_type", "background", "interview_type"]
+  },
+  "sentiment_analysis": {
+    "template": "Perform a detailed sentiment analysis on the following {content_type}:\n\n{text}\n\nAnalyze:\n1. Overall sentiment (positive/negative/neutral) with confidence score\n2. Emotion breakdown (joy, anger, fear, surprise, disgust, sadness)\n3. Key sentiment-driving phrases\n4. Aspect-based sentiment (if multiple topics mentioned)\n5. Python code to automate this analysis at scale",
+    "variables": ["content_type", "text"]
+  },
+  "chart_explanation": {
+    "template": "Analyze and explain the following chart/graph in detail:\n\nChart type: {chart_type}\nData description: {data_description}\nContext: {context}\n\nProvide:\n1. What the chart shows at a glance\n2. Key trends and patterns\n3. Notable outliers or anomalies\n4. Business or analytical insights\n5. Recommendations based on the data",
+    "variables": ["chart_type", "data_description", "context"]
+  },
+  "brainstorming": {
+    "template": "Generate creative and diverse ideas for the following challenge:\n\nChallenge: {challenge}\nConstraints: {constraints}\nTarget audience: {audience}\nGoal: {goal}\n\nProvide 15 ideas ranging from conventional to unconventional, organized by:\n- Quick wins (implementable immediately)\n- Medium-term ideas (1-3 months)\n- Bold/innovative concepts (long-term)",
+    "variables": ["challenge", "constraints", "audience", "goal"]
+  },
+  "lesson_planning": {
+    "template": "Create a detailed lesson plan for the following:\n\nSubject: {subject}\nTopic: {topic}\nGrade/Level: {level}\nDuration: {duration}\nLearning objectives: {objectives}\n\nInclude:\n1. Learning outcomes\n2. Materials needed\n3. Introduction/hook (5 min)\n4. Main activity with timing\n5. Assessment method\n6. Differentiation for advanced and struggling students",
+    "variables": ["subject", "topic", "level", "duration", "objectives"]
+  },
+  "product_descriptions": {
+    "template": "Write a compelling product description for:\n\nProduct: {product_name}\nCategory: {category}\nKey features: {features}\nTarget customer: {target_customer}\nPlatform: {platform}\n\nCreate:\n1. Short description (50 words) for listings\n2. Long description (200 words) with benefits-focused copy\n3. 5 bullet points highlighting key features\n4. SEO-optimized title",
+    "variables": ["product_name", "category", "features", "target_customer", "platform"]
+  },
+  "api_docs": {
+    "template": "Write comprehensive API documentation for the following endpoint:\n\nEndpoint: {endpoint}\nMethod: {method}\nPurpose: {purpose}\nParameters: {parameters}\nAuth type: {auth_type}\n\nDocument:\n1. Endpoint description\n2. Request format with all parameters\n3. Response format with all fields\n4. Example request (curl + Python)\n5. Error codes and their meanings",
+    "variables": ["endpoint", "method", "purpose", "parameters", "auth_type"]
+  },
+  "chatbot_scripting": {
+    "template": "Design a complete chatbot conversation flow for:\n\nUse case: {use_case}\nPlatform: {platform}\nBrand voice: {brand_voice}\nKey user intents: {intents}\n\nProvide:\n1. Welcome message and quick replies\n2. Decision tree for top 5 intents\n3. Fallback responses for unrecognized inputs\n4. Escalation path to human agent\n5. Closing/satisfaction check message",
+    "variables": ["use_case", "platform", "brand_voice", "intents"]
+  }
+}
